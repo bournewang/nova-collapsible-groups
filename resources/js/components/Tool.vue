@@ -27,7 +27,7 @@
         },
         methods: {
             toggle() {
-                var expanded = document.getElementByClassName('menu-expanded')
+                var expanded = document.getElementsByClassName('menu-expanded')
                 for(var i =0; i < expanded.length; i++) {
                     expanded[i].click()
                 }
