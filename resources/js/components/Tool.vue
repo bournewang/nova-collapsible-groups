@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4 class="ml-2 mb-4 text-sm text-white-50% uppercase tracking-wide hover:text-white" @click.prevent="toggle">
+        <h4 :class="'ml-2 mb-4 text-sm text-white-50% uppercase tracking-wide hover:text-white' + (is_expanded ? ' menu-expanded' : '') " @click.prevent="toggle">
             {{ header }}
         </h4>
 
@@ -27,6 +27,10 @@
         },
         methods: {
             toggle() {
+                var expanded = document.getElementByClassName('menu-expanded')
+                for(var i =0; i < expanded.length; i++) {
+                    expanded[i].click()
+                }
                 this.is_expanded = !this.is_expanded
             }
         }
