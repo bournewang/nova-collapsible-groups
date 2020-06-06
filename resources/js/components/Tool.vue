@@ -27,10 +27,6 @@
         },
         methods: {
             toggle() {
-                var expanded = document.getElementsByClassName('menu-expanded')
-                for(var i =0; i < expanded.length; i++) {
-                    expanded[i].click()
-                }
                 this.is_expanded = !this.is_expanded
             }
         }
