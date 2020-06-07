@@ -26,7 +26,13 @@
             this.is_expanded = this.expanded;
         },
         methods: {
-            toggle() {
+            toggle(e) {
+                if (!e.target.classList.contains('menu-expanded')) {
+                    var expanded = document.getElementsByClassName('menu-expanded')
+                    for(var i =0; i < expanded.length; i++) {
+                        expanded[i].click()
+                    }
+                }
                 this.is_expanded = !this.is_expanded
             }
         }
