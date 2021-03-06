@@ -1,5 +1,5 @@
 {
-    "name": "tanmuhittin/nova-collapsible-groups",
+    "name": "bourne/nova-collapsible-groups",
     "description": "Makes nova core theme navigation collapsible",
     "require": {
         "php": ">=7.1.0"
